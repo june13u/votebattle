@@ -1,3 +1,5 @@
 
 # classファイルはコミット対象外
 war/WEB-INF/classes/
+war/appengine-generated
+war/lib

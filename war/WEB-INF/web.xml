@@ -12,7 +12,28 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Votebattle</servlet-name>
 		<url-pattern>/votebattle</url-pattern>
 	</servlet-mapping>
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
+	<servlet>
+		<servlet-name>Index</servlet-name>
+		<servlet-class>com.june13u.votebattle.IndexServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Index</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>NewStage</servlet-name>
+		<servlet-class>com.june13u.votebattle.NewStageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewStage</servlet-name>
+		<url-pattern>/stage/new</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ShowStage</servlet-name>
+		<servlet-class>com.june13u.votebattle.ShowStageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowStage</servlet-name>
+		<url-pattern>/stage/show</url-pattern>
+	</servlet-mapping>
 </web-app>
